@@ -1,6 +1,7 @@
 import { createStackNavigator, createAppContainer } from "react-navigation";
 import ResultScreen from "../Screens/ResultScreen";
 import ScannerScreen from "../Screens/ScannerScreen";
+import HomeScreen from "../Screens/HomeSceen";
 
 const RootStack = createStackNavigator(
   {
@@ -9,10 +10,13 @@ const RootStack = createStackNavigator(
     },
     Result: {
       screen: ResultScreen
-    }
+    },
+    Home: {
+        screen: HomeScreen
+      }
   },
   {
-    initialRouteName: "Scanner" //Default screen name
+    initialRouteName: "Home" //Default screen name
   }
 );
 

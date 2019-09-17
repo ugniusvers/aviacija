@@ -1,6 +1,5 @@
 # aviacija
-- KAS PER XUJNE RIBIATA
 
-- Nezinau, bet kazka daryt reikia
+QR scanner
 
-- Nu jau veikia
+- Working application
