@@ -18,17 +18,16 @@ class HomeScreen extends React.Component {
         };
     }
 
-    onClick() {  
-      console.log("ipilk gin'o benai");
-      this.props.navigation.navigate("Scanner");
+    onClick() {
+        this.props.navigation.navigate("Scanner");
     }
 
     render() {
         const { navigation } = this.props;
-       
+
         return (
             <View style={styles.qrCard}>
-                <Button onPress={() => this.onClick()} title="benas sake scan" />
+                <Button onPress={() => this.onClick()} title="Scan" />
             </View>
         );
     } 1
@@ -36,13 +35,13 @@ class HomeScreen extends React.Component {
 
 const styles = StyleSheet.create({
     qrCard: {
-      marginTop: 40,
-      display: 'flex',
-      alignItems: 'center'
+        marginTop: 40,
+        display: 'flex',
+        alignItems: 'center'
     },
     header: {
-      fontSize: 40
+        fontSize: 40
     }
-  });
-  
+});
+
 export default HomeScreen;

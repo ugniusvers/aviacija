@@ -18,8 +18,7 @@ class ResultScreen extends React.Component {
     };
   }
 
-  onClick() {  
-    console.log("ipilk gin'o benai");
+  onClick() {
     this.props.navigation.navigate("Scanner");
   }
 
@@ -38,13 +37,13 @@ class ResultScreen extends React.Component {
             borderWidth: 0.5,
             borderColor: '#d6d7da'
           }}
-          source={{ uri: data[qr].img}}
+          source={{ uri: data[qr].img }}
         />
         <Text>{data[qr].sn}</Text>
         <Text>{data[qr].pn}</Text>
         <Text>{data[qr].location}</Text>
         <Text>{data[qr].instructions}</Text>
-        <Button onPress={() => this.onClick()} title="atgal grizt" />
+        <Button onPress={() => this.onClick()} title="Back" />
       </View>
     }
     return (
