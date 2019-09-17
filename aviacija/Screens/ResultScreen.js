@@ -49,6 +49,7 @@ class ResultScreen extends React.Component {
     return (
       <View style={styles.qrCard}>
         <Text>QR code not found.</Text>
+        <Button onPress={() => this.onClick()} title="Back" />
       </View>
     );
   } 1
