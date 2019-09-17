@@ -24,8 +24,7 @@ export default class AnatomyExample extends Component {
     }
 
     return <>
-    <Text>Test</Text>
-    <Navigation />
+      <Navigation />
     </>;
   }
 }
