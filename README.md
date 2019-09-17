@@ -1,1 +1,2 @@
 # aviacija
+KAS PER XUJNE RIBIATA
