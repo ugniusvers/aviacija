@@ -5,7 +5,6 @@ import { Grid, Row } from "react-native-easy-grid";
 import { withNavigationFocus } from "react-navigation";
 import { BarCodeScanner, Permissions } from "expo";
 import { FontAwesome } from "@expo/vector-icons";
-import SQL from "../components/SQL";
 import { SpinnerScreen } from "../components/commons";
 
 class ScannerScreen extends React.Component {
@@ -23,13 +22,8 @@ class ScannerScreen extends React.Component {
     this.setState({ hasCameraPermission: status === "granted" });
   }
 
-  saveToDB = qr => {
-    SQL.AddQR(qr);
-  };
-
   handleBarCodeScanned = ({ type, data }) => {
-    this.saveToDB(data);
-    //change screen to Result and pass scanned qr
+    console.log({ type, data });
     this.props.navigation.navigate("Result", {
       qr: data
     });
