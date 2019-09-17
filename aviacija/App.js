@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { AppLoading } from "expo";
 import Navigation from "./components/Navigation";
 import SQL from "./components/SQL";
+import { Text, View } from 'react-native';
 
 export default class AnatomyExample extends Component {
   constructor(props) {
@@ -24,6 +25,9 @@ export default class AnatomyExample extends Component {
       return <AppLoading />;
     }
 
-    return <Navigation />;
+    return <>
+    <Text>Test</Text>
+    <Navigation />
+    </>;
   }
 }
